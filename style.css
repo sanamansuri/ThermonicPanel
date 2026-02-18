@@ -1,0 +1,379 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff
+}
+
+
+
+
+.container {
+    min-height: 100vh;   /* page content ke hisaab se badhega */
+    height: auto;
+}
+.container {
+    position: relative;   /* logo ko container ke andar control karne ke liye */
+}
+
+
+/* LOGO STYLE */
+.logo-img {
+    position: absolute;
+    top: 20px;        /* container ke top se */
+    left: 20px;       /* left se */
+    width: 180px;     /* logo size */
+    height: auto;
+    z-index: 10;      /* image se upar rahe */
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        width: 120px;
+    }
+}
+
+.left, .right {
+    width: 50%;
+    padding: 20px;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.right h1 {
+    color: #0b3c5d;
+}
+
+.right p {
+    color: #1e5fa3;
+}
+
+.right h1 {
+    margin-bottom: 10px;
+}
+
+.right p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+        height: auto;
+    }
+
+    .left img {
+        height: auto;
+    }
+}
+
+.left {
+    display: flex;
+    justify-content: center;   /* horizontally center */
+    align-items: center;       /* vertically center */
+}
+
+.left img {
+    width: 70%;
+    height: auto;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left, .right {
+    width: 50%;
+    padding: 20px;
+}
+
+/* Image wrapper */
+.image-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box {
+    width: 100%;
+}
+
+.image-box img {
+    width: 100% !important;
+    max-width: none !important;
+    height: auto;
+    border-radius: 12px;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #dceeff,
+        #a7cfff
+    );
+}
+
+/* Main container */
+.container {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    margin: 30px;
+    padding: 25px;
+
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border-radius: 22px;
+    border: 1px solid rgba(255,255,255,0.4);
+
+    box-shadow: 0 10px 40px rgba(30, 95, 163, 0.25);
+}
+
+
+/* LEFT */
+.left, .right {
+    width: 50%;
+    padding: 20px;
+}
+
+.image-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box img {
+    width: 70%;
+    border-radius: 12px;
+}
+
+/* Text on image */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(6px);
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #0b3c5d;
+}
+
+/* RIGHT */
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right h1 {
+    color: #0b3c5d;
+}
+
+.right p {
+    color: #1f4e79;
+    line-height: 1.6;
+}
+
+/* ACCORDION */
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0b3c5d;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.accordion-body {
+    display: none;
+    padding: 15px 20px;
+    color: #1f4e79;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-body {
+    display: block;
+}
+
+.accordion-item.active .arrow {
+    transform: rotate(180deg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    .left, .right {
+        width: 100%;
+    }
+}
+.accordion-body ul {
+    padding-left: 18px;
+    margin-top: 10px;
+}
+
+.accordion-body li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+.accordion-item {
+    background: rgba(255,255,255,0.45);
+    border: 1px solid rgba(30,95,163,0.25);
+}
+
+.accordion-header {
+    color: #0b3c5d;
+}
+
+.accordion-body {
+    color: #1e5fa3;
+}
+.image-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* MAIN IMAGE (1.png) */
+.product-img{
+    width: 100%;
+    max-width: 450px;   /* image size */
+    height: auto;
+}
+
+/* ICONS */
+.social-icons{
+    margin-top: 14px;   /* image ke niche gap */
+    display: flex;
+    gap: 18px;
+}
+
+/* ICON COMMON */
+.social-icons a{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+/* Instagram */
+.social-icons .insta{
+    background: linear-gradient(45deg,#f58529,#dd2a7b,#8134af);
+}
+
+/* Facebook */
+.social-icons .facebook{
+    background: #1877f2;
+}
+
+.social-icons a:hover{
+    transform: scale(1.1);
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* IMAGE */
+.product-img{
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+}
+
+/* ICON CONTAINER */
+.bottom-icons{
+    margin-top: 25px;     /* image se gap */
+    margin-bottom: 10px;  /* container ke bottom se space */
+    display: flex;
+    gap: 18px;
+}
+
+/* ICON STYLE */
+.social-icons a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+/* Instagram */
+.social-icons .insta{
+    background: linear-gradient(45deg,#f58529,#dd2a7b,#8134af);
+}
+
+/* Facebook */
+.social-icons .facebook{
+    background: #1877f2;
+}
+
+.social-icons a:hover{
+    transform: translateY(-4px) scale(1.05);
+}
