@@ -377,3 +377,73 @@ body {
 .social-icons a:hover{
     transform: translateY(-4px) scale(1.05);
 }
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+@media (max-width: 768px) {
+    .container{
+        margin: 12px;
+        padding: 18px;
+        border-radius: 16px;
+        flex-direction: column;
+        min-height: auto;
+    }
+}
+@media (max-width: 768px) {
+    .logo-img{
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 12px;
+        width: 110px;
+    }
+}
+@media (max-width: 768px) {
+    .left{
+        padding: 10px;
+    }
+
+    .product-img,
+    .image-box img{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 768px) {
+    .bottom-icons{
+        justify-content: center;
+        margin-top: 18px;
+    }
+}
+@media (max-width: 768px) {
+    .right{
+        padding: 10px;
+    }
+
+    .right h1{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .right p{
+        font-size: 15px;
+        text-align: justify;
+    }
+}
+@media (max-width: 768px) {
+    .accordion-header{
+        font-size: 15px;
+        padding: 14px 16px;
+    }
+
+    .accordion-body{
+        font-size: 14px;
+    }
+}
